@@ -1,0 +1,29 @@
+<main class="wrapper">
+  <section class="container" id="demo-content">
+    <h1>Bar Code Scanner</h1>
+
+    <div class="content">
+      <div class="video-controls">
+
+        <div style="position: relative;">
+          <video #videoElement width="300" height="200" style="max-width: 100%;"></video>
+          <div *ngIf="isScanning" class="scanner-overlay"></div>
+        </div>
+
+        <div>
+          <button (click)="startScan()">Start</button>
+          <button (click)="stopScan()">Stop</button>
+          <button (click)="resetScan()">Reset</button>
+        </div>
+      </div>
+
+    
+    </div>
+  </section>
+  <section>
+    <div class="scanned-items">
+      <label for="scannedItems">Scanned Items ({{barcodeStack.size()}}):</label>
+      <pre id="scannedItems"><code>{{traverse()}}</code></pre>
+    </div>
+  </section>
+</main>

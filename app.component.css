@@ -1,0 +1,109 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Use a modern font */
+  }
+  
+  body {
+    background-color: #f4f4f4; /* Light background for the app */
+  }
+  
+  .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 10vh;
+    padding-top: 2em;
+    flex-direction: column; /* Stack elements vertically */
+  }
+  
+  .container {
+    text-align: center;
+    background-color: #fff; /* White background for content */
+    padding: 20px;
+    border-radius: 8px; /* Rounded corners for the container */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    max-width: 500px; /* Max width for the container */
+    width: 100%;
+    margin: auto;
+  }
+  
+  h1 {
+    color: #333; /* Dark color for the heading */
+    margin-bottom: 1em;
+  }
+  
+  button {
+    background-color: #28a745; /* Bootstrap's green for primary action */
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 5px; /* Rounded borders for buttons */
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease; /* Transition for button hover effect */
+  }
+  
+  button:hover {
+    background-color: #218838; /* A shade darker on hover */
+  }
+  
+  button:active {
+    transform: translateY(2px); /* Button press effect */
+  }
+  
+  .scanner-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 140px;
+    height: 70px;
+    transform: translate(-50%, -50%);
+    border: 3px solid #28a745; /* Green border for the overlay */
+    border-radius: 10px; /* Rounded corners for the overlay */
+    pointer-events: none;
+  }
+  
+  /* Add custom styles for your crosshair-vertical and crosshair-horizontal if needed */
+  
+  /* Scanned items styles */
+  pre {
+    background-color: #eee; /* Light background for the code block */
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd; /* Border for the code block */
+    margin-top: 1em;
+  }
+  
+  /* Add responsiveness */
+  @media (max-width: 768px) {
+    .container {
+      width: 90%;
+    }
+  }
+
+  /* ... existing styles ... */
+
+.content {
+    display: flex;
+    justify-content: space-between; /* Aligns children with space in between */
+    align-items: flex-start; /* Aligns items to the top */
+  }
+  
+  .video-controls {
+    /* Styles for the video and control buttons */
+    flex-grow: 1; /* Allows this column to grow as needed */
+  }
+  
+  .scanned-items {
+    /* Styles for the scanned items list */
+    max-width: 500px; /* Set a max-width for the scanned items list */
+    margin-left: 20px; /* Add some space between the columns */
+  }
+  
+  /* ... remaining styles ... */
+  
+  
